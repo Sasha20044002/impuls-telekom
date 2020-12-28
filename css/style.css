@@ -367,6 +367,18 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .main .header .form .search {
+    width: 345px;
+  }
+  .main .header .form .search .select {
+    width: 20.4%;
+  }
+  .main .header .form .search #search {
+    width: 18%;
+  }
+}
+
 @media (max-width: 425px) {
   body {
     overflow-x: hidden;

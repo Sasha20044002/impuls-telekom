@@ -37,6 +37,24 @@ body{
     }
 }
 
+@media (max-width: 768px){
+    .main{
+        .header{
+            .form{
+                .search{
+                    width: 345px;
+                    .select{
+                        width: 20.4%
+                    }
+                    #search{
+                        width: 18%;
+                    }
+                }
+            }
+        }
+    }
+}
+
 //Telephone
 @media (max-width: 425px){
     body{
