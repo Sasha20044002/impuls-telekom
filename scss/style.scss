@@ -13,11 +13,10 @@ body{
 }
 
 @import '_left-menu.scss';
+@import '_header.scss';
 
-.main{
+footer{
     width: 100%;
-
-    @import '_header.scss';
 }
 
 @media (min-width: 1901px){
@@ -28,37 +27,31 @@ body{
 }
 
 @media (max-width: 950px){
-    .main{
         .header{
             .text{
                 display: none;
             }
         }
-    }
 }
 
 @media (max-width: 768px){
-    .main{
         .header{
             .form{
                 .search{
-                    width: 345px;
                     .select{
                         width: 20.4%
                     }
-                    #search{
-                        width: 18%;
-                    }
+                    
                 }
             }
         }
-    }
 }
 
 //Telephone
 @media (max-width: 425px){
     body{
         overflow-x: hidden;
+        flex-wrap: wrap;
     }
 
     .nav{
@@ -67,7 +60,7 @@ body{
         background-color: white;
         display: flex;
         align-items: center;
-        padding: 0 33% 0 15px;
+        padding: 0 64% 0 15px;
         border-bottom: 1px solid rgba(77, 77, 77, .2);
         
 
@@ -145,45 +138,19 @@ body{
             }
         }
     }
-
-    .main{
-        width: 100%;
         .header{
             display: block;
-            width: 100%;
+            width: 34.21%;
+            border: none;
+            position: absolute;
+            top: 0px;
+            right: 0;
             .form{
                 display: none;
             }
         }
-    }
-}
 
-@media (max-width: 400px){
-    .nav{
-        padding-right: 20%;
-    }
-}
-
-@media (max-width: 393px){
-    .nav{
-        padding-right: 25%;
-    }
-}
-
-@media (max-width: 357px){
-    .nav{
-        padding-right: 20%;
-    }
-}
-
-@media (max-width: 330px){
-    .nav{
-        padding-right: 15%;
-    }
-}
-
-@media (max-width: 320px){
-    .nav{
-        padding-right: 10%;
-    }
+        .main{
+            width: 100%;
+        }
 }
