@@ -115,6 +115,10 @@ body {
 .nav .catalog #info:checked ~ .info-label::after,
 .nav .catalog #profil:checked ~ .profil-label::after {
   display: block;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  top: -4.5px;
+  right: 13px;
 }
 
 .nav .catalog output {
@@ -144,11 +148,13 @@ body {
 
 .nav .catalog .zakaz-label::after, .nav .catalog .docum-label::after, .nav .catalog .study-label::after, .nav .catalog .market-label::after, .nav .catalog .info-label::after, .nav .catalog .profil-label::after {
   content: url(../img/arrow.svg);
-  display: none;
+  display: block;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   width: 9px;
   height: 5px;
   position: absolute;
-  top: -4.5px;
+  top: 17px;
   right: 13px;
 }
 
@@ -444,7 +450,7 @@ body {
         -ms-flex-order: 3;
             order: 3;
     margin-top: 10px;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
   }
 }
 
@@ -486,7 +492,6 @@ body {
 
 @media (max-width: 600px) {
   body {
-    overflow-x: hidden;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -592,72 +597,8 @@ body {
 }
 
 @media (max-width: 425px) {
-  body {
-    overflow-x: hidden;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .nav {
-    width: 132px;
-    min-height: 55px;
-    background-color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     padding: 0 64% 0 15px;
-    border-bottom: 1px solid rgba(77, 77, 77, 0.2);
-  }
-  .nav .catalog-open {
-    display: block;
-    margin: 0 16px 0 0;
-  }
-  .nav .logo {
-    padding: 0;
-    margin: 0 auto;
-  }
-  .nav .logo-mob-img {
-    display: block;
-    margin: 0 0 3px 0;
-  }
-  .nav .logo-img {
-    display: none;
-  }
-  .nav .logo-text {
-    font-size: 5.6px;
-  }
-  .nav #catalog:checked ~ .catalog {
-    display: block;
-    position: absolute;
-    left: 0;
-  }
-  .nav .catalog {
-    display: none;
-    position: static;
-    top: 0;
-    left: -999999%;
-    background-color: #f5f5f5;
-    width: 100%;
-    min-height: 100vh;
-    z-index: 3;
-  }
-  .nav .catalog-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 13px 0 0 14.55px;
-    margin: 0 0 20px 0;
-  }
-  .nav .catalog-logo .catalog-close {
-    margin: 0 16.32px 0 0;
-  }
-  .nav .catalog .line1 {
-    width: 98%;
   }
   .nav .catalog .zakaz-label,
   .nav .catalog .docum-label,
@@ -667,30 +608,7 @@ body {
   .nav .catalog .profil-label {
     width: 80%;
   }
-  .nav .catalog .zakaz-label .total,
-  .nav .catalog .docum-label .total,
-  .nav .catalog .study-label .total,
-  .nav .catalog .market-label .total,
-  .nav .catalog .info-label .total,
-  .nav .catalog .profil-label .total {
-    right: 325px;
-    top: -5px;
-  }
-  .nav .catalog .list-item-link output {
-    left: 90px;
-  }
   .container .header {
-    display: block;
     width: 34.21%;
-    border: none;
-    position: absolute;
-    top: 0px;
-    right: 0;
-  }
-  .container .header .form {
-    display: none;
-  }
-  .container .main {
-    width: 100%;
   }
 }

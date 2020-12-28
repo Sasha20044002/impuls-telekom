@@ -73,6 +73,9 @@
         #info:checked~.info-label::after,
         #profil:checked~.profil-label::after{
             display: block;
+            transform: rotate(0deg);
+            top: -4.5px;
+            right: 13px;
         }
 
         output{
@@ -95,11 +98,12 @@
 
             &::after{
                 content: url(../img/arrow.svg);
-                display: none;
+                display: block;
+                transform: rotate(180deg);
                 width: 9px;
                 height: 5px;
                 position: absolute;
-                top: -4.5px;
+                top: 17px;
                 right: 13px;
             }
         }
