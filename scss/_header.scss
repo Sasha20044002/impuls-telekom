@@ -1,0 +1,108 @@
+.header{
+    margin: 12px 0 0 0;
+    padding: 0 0 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid  rgba(77, 77, 77, .2);
+
+    .form{
+        .search{
+            width: 475px;
+            height: 32px;
+            border: 1px solid #CDCDCD;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .select{
+                width: 157px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                @include txt(black, 24px, 12px, $C400);
+
+                &:focus, &:active{
+                    outline: none;
+                }
+            }
+
+            #search{
+                width: 268px;
+                border: none;
+                @include txt(#4d4d4d, 24px, 12px, $C400);
+                position: relative;
+                padding-left: 20px;
+                border-left: 1px solid #cdcdcd;
+                &:focus, &:active{
+                    outline: none
+                }
+
+                &::after{
+                    content: url(../img/loop.svg);
+                    display: block;
+                    width: 12px;
+                    height: 12px;
+                    position: absolute;
+                    top: 50px;
+                    right: 0;
+                }
+            }
+
+            label[for="search"]{
+                padding-right: 9px;
+            }
+        }
+    }
+
+    .text{
+        @include txt(#4d4d4d, 12px, 12px, $C400);
+
+        b{
+            color: black;
+            font-family: $C800;
+        }
+    }
+
+    .social{
+        width: 123px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .bin, .bell, .profile{
+            display: block;
+            border: none;
+            background-color: #f5f5f5;
+            border-radius: 50%;
+            position: relative;
+            
+            output{
+                @include txt(white, 0px, 6px, $C800);
+                background-color: $c2;
+                border-radius: 50%;
+                padding: 7px 5px 5px 5px;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            &-img{
+                padding: 8px;
+            }
+
+            &:hover{
+                cursor: pointer;
+                background-color: #E9F0F7;
+            }
+
+            &:focus, &:active{
+                outline: none;
+            }
+        }
+
+        .bell{
+            margin: 0 9px;
+        }
+    }
+}

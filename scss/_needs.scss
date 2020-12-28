@@ -1,0 +1,16 @@
+@import '_fonts.scss';
+
+@mixin txt ($c, $lh, $fz, $ff) {
+    color: $c;
+    line-height: $lh;
+    font-size: $fz;
+    font-family: $ff, sans-serif;
+}
+
+//fonts
+$C400: Circe-Regular;
+$C800: Circe-Bold;
+//color
+$grey: #808080;
+$c1: #4d4d4d;
+$c2: #E0101B;
