@@ -7,6 +7,11 @@
     border-bottom: 1px solid  rgba(77, 77, 77, .2);
 
     .form{
+        .input{
+            display: flex;
+            align-items: center;
+        }
+
         .search{
             width: 475px;
             height: 32px;
@@ -47,6 +52,7 @@
     }
 
     .text{
+        width: 186px;
         @include txt(#4d4d4d, 12px, 12px, $C400);
 
         b{
