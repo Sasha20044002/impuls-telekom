@@ -242,11 +242,13 @@ body {
 
                         .text{
                             @include txt($c1, 14px, 12px, $C400);
+                            padding-left: 14px;
                         }
 
 
                         .number{
                             @include txt(black, 24px, 12px, $C400);
+                            padding-left: 14px;
                         }
 
                         .green{
@@ -279,7 +281,6 @@ body {
 
                     tr{
                         td:first-child{
-                            padding-left: 14px;
                             width: 119px;
                         }
                     }

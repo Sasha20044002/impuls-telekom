@@ -726,6 +726,7 @@ body {
   line-height: 14px;
   font-size: 12px;
   font-family: Circe-Regular, sans-serif;
+  padding-left: 14px;
 }
 
 .container .main .container .list .table tr .number {
@@ -733,6 +734,7 @@ body {
   line-height: 24px;
   font-size: 12px;
   font-family: Circe-Regular, sans-serif;
+  padding-left: 14px;
 }
 
 .container .main .container .list .table tr .green {
@@ -763,7 +765,6 @@ body {
 }
 
 .container .main .container .list .table tr td:first-child {
-  padding-left: 14px;
   width: 119px;
 }
 
