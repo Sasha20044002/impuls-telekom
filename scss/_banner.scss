@@ -1,0 +1,23 @@
+@import '_needs.scss';
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 41px 0;
+
+    .img {
+        position: relative;
+        .text{
+            @include txt(white, 24px, 24px, $C800);
+            text-transform: uppercase;
+            position: absolute;
+            top: 81px;
+            left: 41.64px;
+        }
+    }
+
+    .arrow-left{
+        transform: rotate(180deg);
+    }
+}

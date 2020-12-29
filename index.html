@@ -228,6 +228,7 @@
         <!-- header end -->
         <!-- main start -->
         <main class="main">
+            <!-- bread-crubms start -->
             <nav class="bread-crumbs">
                 <ul class="list">
                     <li class="item">
@@ -247,6 +248,209 @@
                     </li>
                 </ul>
             </nav>
+            <!-- bread-crubms end -->
+            <!-- content start -->
+            <div class="container">
+                <div class="title">
+                    <span class="title-title">История заказов</span>
+                    <button class="title-btn">
+                        Добавить заказ
+                    </button>
+                </div>
+                <form action="#" method="POST" class="search">
+                    <div class="number">
+                        <label for="number">Поиск по номеру заказа:</label>
+                        <input type="number" name="number" id="number" placeholder="561543">
+                    </div>
+                    <div class="period">
+                        <label for="period">Искать по период:</label>
+                        <div class="period-inputs">
+                            <span class="period-inputs-text">с</span> <input type="date" name="date" id="date"> <span
+                                class="period-inputs-text">до</span> <input type="date" name="date" id="date">
+                        </div>
+                    </div>
+                    <div class="status">
+                        <label for="status">Поиск по статусу заказа:</label>
+                        <select name="status" id="status" size="2">
+                            <option value="1">ждет оплаты</option>
+                            <option value="2">оплачен</option>
+                            <option value="3">не оплачен</option>
+                            <option value="4">не указано</option>
+                        </select>
+                    </div>
+                    <div class="organiz">
+                        <label for="organiz">Поиск по статусу заказа:</label>
+                        <select name="organiz" id="organiz" size="2">
+                            <option value="1">ООО «МВМ»</option>
+                            <option value="2">ИП Семенова</option>
+                            <option value="3">ООО «МВМ»</option>
+                            <option value="4">ИП Семенова</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit">Найти</button>
+                </form>
+                <div class="list">
+                    <div class="list-title">
+                        <a href="#" class="select active">Все Заказы</a>
+                        <a href="#" class="select"><span>Текущие Заказы</span></a>
+                        <a href="#" class="select"><span>Завершенные</span></a>
+                        <a href="#" class="select"><span>Отмененные</span></a>
+                    </div>
+                    <table class="table">
+                        <tr class="line">
+                            <td class="text">Статус заказа</td>
+                            <td class="text">№ заказа</td>
+                            <td class="text">Дата заказа</td>
+                            <td class="text">Статус оплаты</td>
+                            <td class="text">Дата отгрузки</td>
+                            <td class="text">Самовызов возможен</td>
+                            <td class="text">Доставка возможна</td>
+                            <td class="text">Контрагент</td>
+                            <td class="text">Сумма заказа, руб</td>
+                        </tr>
+                        <tr class="finish">
+                            <td class="text green">Выполнен</td>
+                            <td><a href="#" class="number">25684354</a></td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">Оплачен</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">ИП Семенов</td>
+                            <td class="text">120 000</td>
+                        </tr>
+                        <tr class="wait">
+                            <td class="text red">Принят</td>
+                            <td><a href="#" class="number">25684354</a></td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">Оплачен</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">ИП Семенов</td>
+                            <td class="text">120 000</td>
+                        </tr>
+                        <tr class="wait">
+                            <td class="text red">Запрос цены</td>
+                            <td><a href="#" class="number">25684354</a></td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">Оплачен</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="text">ООО «МВМ»</td>
+                            <td class="text">120 000</td>
+                        </tr>
+                        <tr class="wait">
+                            <td class="text red">Индивидуальная стоимость</td>
+                            <td><a href="#" class="number">25684354</a></td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">Оплачен</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">ИП Семенов</td>
+                            <td class="text">120 000</td>
+                        </tr>
+                        <tr class="buy">
+                            <td class="text blue short">В закупе 28.03.2020</td>
+                            <td><a href="#" class="number">25684354</a></td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">Оплачен</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">ИП Семенов</td>
+                            <td class="text">120 000</td>
+                        </tr>
+                        <tr class="buy">
+                            <td class="text blue long">Частично в закупке 28.03.2020</td>
+                            <td><a href="#" class="number">25684354</a></td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">Оплачен</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="text">ООО «МВМ»</td>
+                            <td class="text">120 000</td>
+                        </tr>
+                        <tr class="default">
+                            <td class="text bold">Готов к отгрузке</td>
+                            <td><a href="#" class="number">25684354</a></td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">Оплачен</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">ООО «МВМ»</td>
+                            <td class="text">120 000</td>
+                        </tr>
+                        <tr class="default">
+                            <td class="text bold">Частично в закупке</td>
+                            <td><a href="#" class="number">25684354</a></td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">Оплачен</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">ИП Семенов</td>
+                            <td class="text">120 000</td>
+                        </tr>
+                        <tr class="default">
+                            <td class="text bold">Частично отгружен</td>
+                            <td><a href="#" class="number">25684354</a></td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">Оплачен</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">ИП Семенов</td>
+                            <td class="text">120 000</td>
+                        </tr>
+                        <tr class="default">
+                            <td class="text bold">Полностью отгружен</td>
+                            <td><a href="#" class="number">25684354</a></td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">Оплачен</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">28.03.2020</td>
+                            <td class="text">ООО «МВМ»</td>
+                            <td class="text">120 000</td>
+                        </tr>
+                    </table>
+                    <div class="pigmintation">
+                        <a href="#" class="arrow-right">
+                            <img src="img/arrow-2.svg" alt="arrow">
+                        </a>
+                        <a href="#" class="page active">1</a>
+                        <a href="#" class="page">2</a>
+                        <a href="#" class="page">3</a>
+                        <span class="dots">...</span>
+                        <a href="#" class="page">16</a>
+                        <a href="#" class="arrow-left">
+                            <img src="img/arrow-2.svg" alt="arrow">
+                        </a>
+                    </div>
+                </div>
+                <div class="banner">
+                    <a href="#" class="arrow-right">
+                        <img src="img/arrow-3.svg" alt="arrow">
+                    </a>
+                    <div class="img">
+                        <img src="img/banner-img-1.png" alt="img">
+                        <span class="text">баннер</span>
+                    </div>
+                    <div class="img">
+                        <img src="img/banner-img-2.png" alt="img">
+                        <span class="text">баннер</span>
+                    </div>
+                    <a href="#" class="arrow-left">
+                        <img src="img/arrow-3.svg" alt="arrow">
+                    </a>
+                </div>
+            </div>
+            <!-- content end -->
         </main>
         <!-- main end -->
     </div>
